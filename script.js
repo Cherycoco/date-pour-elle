@@ -16,16 +16,22 @@ const music = document.getElementById("bgMusic");
 // Bouton commencer
 // =======================
 
-startBtn.onclick = () => {
+startBtn.addEventListener("click", async () => {
 
-    music.volume = 0.35;
+    try {
 
-    music.play().catch(err => {
-        console.log("Lecture impossible :", err);
-    });
+        music.volume = 0.35;
+        await music.play();
+
+    } catch (e) {
+
+        console.error("Erreur lecture :", e);
+
+    }
 
     show("question");
-};
+
+});
 
 // =======================
 // Bouton NON
