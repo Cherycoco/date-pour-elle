@@ -57,8 +57,7 @@ setInterval(()=>{
 },500);
 const music = document.getElementById("bgMusic");
 
-document.addEventListener("click", () => {
-    if (music.paused) {
-        music.play();
-    }
-}, { once: true });
+startBtn.addEventListener("click", () => {
+    music.volume = 0.35; // volume à 35 %
+    music.play().catch(err => console.log(err));
+});
