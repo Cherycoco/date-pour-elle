@@ -1,304 +1,189 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Une petite surprise ❤️</title>
+    <title>Une petite invitation ❤️</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+</head>
 <body>
 
-<div class="background"></div>
+<div class="background">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+</div>
 
-<div id="particles"></div>
+<div id="hearts"></div>
 
 <main>
 
     <!-- INTRO -->
+    <section id="intro" class="card active">
 
-    <section id="intro" class="page active">
-
-        <div class="glass">
-
-            <span class="emoji">❤️</span>
-
-            <h1>J'ai une petite surprise...</h1>
-
-            <p>
-                J'avais envie de te proposer quelque chose.
-            </p>
-
-            <button id="startButton">
-                Découvrir
-            </button>
-
+        <div class="photo-container">
+            <img src="photo.jpg" alt="Photo">
         </div>
 
-    </section>
+        <h1>J'ai une question... ❤️</h1>
 
+        <p class="subtitle">
+            Promis, ça ne prend que quelques secondes.
+        </p>
 
-    <!-- PHOTO -->
-
-    <section id="photoPage" class="page">
-
-        <div class="glass">
-
-            <img
-                src="photo.jpg"
-                class="photo"
-                alt="Nous">
-
-            <h2>Je crois qu'on n'a pas encore eu l'occasion de vraiment se découvrir.</h2>
-
-            <p>
-
-                Alors...
-
-                j'aimerais t'inviter à passer une soirée avec moi.
-
-            </p>
-
-            <button id="continueButton">
-
-                Continuer
-
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROGRAMME -->
-
-    <section id="planPage" class="page">
-
-        <div class="glass wide">
-
-            <h2>Le programme 🌹</h2>
-
-            <div class="timeline">
-
-                <div class="item">
-
-                    <div class="icon">🍸</div>
-
-                    <div>
-
-                        <h3>19h00</h3>
-
-                        <p>
-
-                            Un premier verre.
-
-                            Juste pour discuter,
-
-                            apprendre à se connaître,
-
-                            et passer un bon moment.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="line"></div>
-
-                <div class="item">
-
-                    <div class="icon">🍣</div>
-
-                    <div>
-
-                        <h3>20h15</h3>
-
-                        <p>
-
-                            Un restaurant.
-
-                            Japonais...
-
-                            Italien...
-
-                            On choisira ensemble 😊
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="line"></div>
-
-                <div class="item">
-
-                    <div class="icon">🌃</div>
-
-                    <div>
-
-                        <h3>Ensuite...</h3>
-
-                        <p>
-
-                            Une petite balade.
-
-                            Ou juste continuer à discuter.
-
-                            Sans regarder l'heure.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <button id="questionButton">
-
-                Continuer ❤️
-
-            </button>
-
-        </div>
+        <button id="startBtn" class="primary-btn">
+            Découvrir
+        </button>
 
     </section>
 
 
     <!-- QUESTION -->
+    <section id="question" class="card">
 
-    <section id="questionPage" class="page">
+        <h2>Est-ce que tu accepterais cette invitation ? 🥹</h2>
 
-        <div class="glass">
+        <p class="question-text">
+            J'aimerais passer un bon moment avec toi.
+        </p>
 
-            <h2>
+        <div class="buttons">
 
-                Alors...
-
-            </h2>
-
-            <h1>
-
-                Est-ce que tu accepterais cette invitation ?
-
-            </h1>
-
-            <div class="actions">
-
-                <button id="yesButton" class="yes">
-
-                    ❤️ Avec plaisir
-
-                </button>
-
-                <button id="thinkButton" class="secondary">
-
-                    🤍 J'aimerais encore réfléchir
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SI OUI -->
-
-    <section id="successPage" class="page">
-
-        <div class="glass">
-
-            <span class="emoji">🥹</span>
-
-            <h1>
-
-                Tu viens de rendre quelqu'un très heureux.
-
-            </h1>
-
-            <p>
-
-                Promis...
-
-                je m'occupe du reste ❤️
-
-            </p>
-
-            <div class="dateCard">
-
-                <h2>Notre soirée</h2>
-
-                <ul>
-
-                    <li>🍸 Un verre</li>
-
-                    <li>🍣 Un restaurant</li>
-
-                    <li>🌃 Une balade</li>
-
-                    <li>❤️ Beaucoup de discussions</li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SI ELLE REFLECHIT -->
-
-    <section id="thinkPage" class="page">
-
-        <div class="glass">
-
-            <h1>
-
-                Aucun problème 😊
-
-            </h1>
-
-            <p>
-
-                Je voulais simplement tenter ma chance.
-
-            </p>
-
-            <p>
-
-                Merci d'avoir pris le temps d'aller jusqu'ici ❤️
-
-            </p>
-
-            <button id="backButton">
-
-                Revenir
-
+            <button id="yesBtn" class="yes">
+                Oui ❤️
             </button>
 
+            <button id="noBtn" class="no">
+                Non 🙄
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CHOIX -->
+    <section id="planning" class="card">
+
+        <h2>Parfait ! 😍</h2>
+
+        <p class="subtitle">
+            Choisissons maintenant les détails.
+        </p>
+
+        <div class="form-group">
+
+            <label>Quel jour ?</label>
+
+            <select id="day">
+
+                <option>Vendredi</option>
+                <option>Samedi</option>
+                <option>Dimanche</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>À quelle heure ?</label>
+
+            <select id="hour">
+
+                <option>18h00</option>
+                <option>19h00</option>
+                <option>20h00</option>
+                <option>21h00</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>Quelle activité ?</label>
+
+            <select id="activity">
+
+                <option>🍣 Restaurant japonais</option>
+                <option>🍕 Pizza</option>
+                <option>🍔 Burger</option>
+                <option>🍹 Boire un verre</option>
+                <option>🎬 Cinéma</option>
+                <option>🌅 Balade</option>
+                <option>🎳 Bowling</option>
+                <option>🎡 Surprise...</option>
+
+            </select>
+
+        </div>
+
+        <button id="confirmBtn" class="primary-btn">
+            Valider ❤️
+        </button>
+
+    </section>
+
+
+
+    <!-- FIN -->
+    <section id="success" class="card">
+
+        <div class="emoji">
+            🥳
+        </div>
+
+        <h2>Génial !!</h2>
+
+        <p id="summary"></p>
+
+        <div class="big-heart">
+            ❤️
         </div>
 
     </section>
 
 </main>
 
+
+
+<!-- Popup -->
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <h3 id="popupTitle"></h3>
+
+        <p id="popupText"></p>
+
+        <button id="popupBtn">
+            Continuer 😅
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- Confettis -->
+
 <canvas id="confetti"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
