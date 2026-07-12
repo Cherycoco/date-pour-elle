@@ -55,3 +55,10 @@ setInterval(()=>{
  });
  setTimeout(()=>h.remove(),6000);
 },500);
+const music = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+    }
+}, { once: true });
