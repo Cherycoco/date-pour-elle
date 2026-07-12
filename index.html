@@ -1,33 +1,304 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Une petite question ❤️</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Une petite surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="bg"></div>
-<div class="overlay"></div>
 
-<div class="card" id="intro">
-<h3>Une petite surprise...</h3>
-<h1>J'ai une question à te poser ❤️</h1>
-<p>Prends ton temps... mais choisis bien 😉</p>
+<div class="background"></div>
 
-<div class="buttons">
-<button id="yes">Oui ❤️</button>
-<button id="no">Non 🥺</button>
-</div>
-<p class="hint">🎵 Prépare "Follow You" de Bring Me The Horizon sur Spotify avant de répondre.</p>
-</div>
+<div id="particles"></div>
 
-<div id="success" class="hidden">
-<h1>🥹 Merci ❤️</h1>
-<p>Tu viens de faire sourire quelqu'un.</p>
-<p>J'ai vraiment hâte qu'on partage ce moment ensemble 🌹</p>
-</div>
+<main>
+
+    <!-- INTRO -->
+
+    <section id="intro" class="page active">
+
+        <div class="glass">
+
+            <span class="emoji">❤️</span>
+
+            <h1>J'ai une petite surprise...</h1>
+
+            <p>
+                J'avais envie de te proposer quelque chose.
+            </p>
+
+            <button id="startButton">
+                Découvrir
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO -->
+
+    <section id="photoPage" class="page">
+
+        <div class="glass">
+
+            <img
+                src="photo.jpg"
+                class="photo"
+                alt="Nous">
+
+            <h2>Je crois qu'on n'a pas encore eu l'occasion de vraiment se découvrir.</h2>
+
+            <p>
+
+                Alors...
+
+                j'aimerais t'inviter à passer une soirée avec moi.
+
+            </p>
+
+            <button id="continueButton">
+
+                Continuer
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROGRAMME -->
+
+    <section id="planPage" class="page">
+
+        <div class="glass wide">
+
+            <h2>Le programme 🌹</h2>
+
+            <div class="timeline">
+
+                <div class="item">
+
+                    <div class="icon">🍸</div>
+
+                    <div>
+
+                        <h3>19h00</h3>
+
+                        <p>
+
+                            Un premier verre.
+
+                            Juste pour discuter,
+
+                            apprendre à se connaître,
+
+                            et passer un bon moment.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="line"></div>
+
+                <div class="item">
+
+                    <div class="icon">🍣</div>
+
+                    <div>
+
+                        <h3>20h15</h3>
+
+                        <p>
+
+                            Un restaurant.
+
+                            Japonais...
+
+                            Italien...
+
+                            On choisira ensemble 😊
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="line"></div>
+
+                <div class="item">
+
+                    <div class="icon">🌃</div>
+
+                    <div>
+
+                        <h3>Ensuite...</h3>
+
+                        <p>
+
+                            Une petite balade.
+
+                            Ou juste continuer à discuter.
+
+                            Sans regarder l'heure.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="questionButton">
+
+                Continuer ❤️
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION -->
+
+    <section id="questionPage" class="page">
+
+        <div class="glass">
+
+            <h2>
+
+                Alors...
+
+            </h2>
+
+            <h1>
+
+                Est-ce que tu accepterais cette invitation ?
+
+            </h1>
+
+            <div class="actions">
+
+                <button id="yesButton" class="yes">
+
+                    ❤️ Avec plaisir
+
+                </button>
+
+                <button id="thinkButton" class="secondary">
+
+                    🤍 J'aimerais encore réfléchir
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SI OUI -->
+
+    <section id="successPage" class="page">
+
+        <div class="glass">
+
+            <span class="emoji">🥹</span>
+
+            <h1>
+
+                Tu viens de rendre quelqu'un très heureux.
+
+            </h1>
+
+            <p>
+
+                Promis...
+
+                je m'occupe du reste ❤️
+
+            </p>
+
+            <div class="dateCard">
+
+                <h2>Notre soirée</h2>
+
+                <ul>
+
+                    <li>🍸 Un verre</li>
+
+                    <li>🍣 Un restaurant</li>
+
+                    <li>🌃 Une balade</li>
+
+                    <li>❤️ Beaucoup de discussions</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SI ELLE REFLECHIT -->
+
+    <section id="thinkPage" class="page">
+
+        <div class="glass">
+
+            <h1>
+
+                Aucun problème 😊
+
+            </h1>
+
+            <p>
+
+                Je voulais simplement tenter ma chance.
+
+            </p>
+
+            <p>
+
+                Merci d'avoir pris le temps d'aller jusqu'ici ❤️
+
+            </p>
+
+            <button id="backButton">
+
+                Revenir
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<canvas id="confetti"></canvas>
 
 <script src="script.js"></script>
+
 </body>
+
 </html>
