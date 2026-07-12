@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Invitation ❤️</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head><body>
+<div class="background"><div class="blob blob1"></div><div class="blob blob2"></div><div class="blob blob3"></div></div>
+<div id="hearts"></div>
+<main>
+<section id="intro" class="card active">
+<div class="photo-container"><img src="photo.jpg"></div>
+<h1>J'ai une question ❤️</h1><p class="subtitle">Promis, ça prend quelques secondes.</p>
+<button id="startBtn" class="primary-btn">Découvrir</button>
+</section>
+<section id="question" class="card">
+<h2>Est-ce que tu accepterais cette invitation ? 🥹</h2>
+<div class="buttons"><button id="yesBtn" class="yes">Oui ❤️</button><button id="noBtn" class="no">Non 🙄</button></div>
+</section>
+<section id="planning" class="card">
+<h2>Parfait 😍</h2>
+<div class="form-group"><label>Jour</label><select id="day"><option>Vendredi</option><option>Samedi</option><option>Dimanche</option></select></div>
+<div class="form-group"><label>Heure</label><select id="hour"><option>18h</option><option>19h</option><option>20h</option></select></div>
+<div class="form-group"><label>Activité</label><select id="activity"><option>🍣 Japonais</option><option>🎬 Cinéma</option><option>🍹 Verre</option><option>🌅 Balade</option></select></div>
+<button id="confirmBtn" class="primary-btn">Valider ❤️</button>
+</section>
+<section id="success" class="card"><h2>🥳 Génial !</h2><p id="summary"></p><div class="big-heart">❤️</div></section>
+</main>
+<div id="popup" class="popup"><div class="popup-content"><h3 id="popupTitle"></h3><p id="popupText"></p><button id="popupBtn">Continuer 😅</button></div></div>
+<canvas id="confetti"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body></html>
