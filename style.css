@@ -1,0 +1,24 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:system-ui,-apple-system,sans-serif;
+height:100vh;overflow:hidden;
+display:flex;justify-content:center;align-items:center;
+background:url('photo.jpg') center/cover no-repeat;
+}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);backdrop-filter:blur(8px)}
+.card,#success{
+position:relative;z-index:2;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(20px);
+padding:40px;border-radius:24px;
+color:white;text-align:center;
+width:min(90%,650px);
+box-shadow:0 20px 60px rgba(0,0,0,.3)
+}
+h1{font-size:3rem;margin:15px 0}
+p{opacity:.9;margin:12px 0}
+.buttons{margin-top:35px;position:relative;height:120px}
+button{padding:18px 34px;border:none;border-radius:999px;font-size:1.1rem;cursor:pointer;transition:.25s}
+#yes{background:#ff4d7e;color:#fff}
+#no{position:absolute;left:58%;top:0;background:#fff}
+.hidden{display:none}
